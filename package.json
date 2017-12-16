@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/joycedelatorre/datingify/issues"
   },
-  "homepage": "https://github.com/joycedelatorre/datingify#readme"
+  "homepage": "https://github.com/joycedelatorre/datingify#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }

@@ -1,2 +1,2 @@
 # datingify
-App for lonely people.
+An app to jibe with strangers!

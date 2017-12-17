@@ -141,7 +141,7 @@
 			var newFriend = {
 				name:$("#name").val().trim(),
 				photo:$("#photo").val().trim(),
-				answers:[
+				scores:[
 				$("#q1").val(),
 				$("#q2").val(),
 				$("#q3").val(),
@@ -155,7 +155,7 @@
 				]
 				// answers:$("#age").val().trim(),
 			};
-			$.post("/api/new", newFriend)
+			$.post("/api/friends", newFriend)
 			.done(function(data){
 				console.log(data);
 				alert("Adding Friend...");

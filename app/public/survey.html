@@ -20,7 +20,7 @@
 
 			<h3>Question 1</h3>
 				<h4>You enjoy cheap romantic dinners and events.</h4>
-				<select required>
+				<select required id="q1">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -30,7 +30,7 @@
 
 			<h3>Question 2</h3>
 				<h4>You are a very adventurous &amp outgoing person who is basically friends with everybody.</h4>
-				<select required>
+				<select required id="q2">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -40,7 +40,7 @@
 
 			<h3>Question 3</h3>
 				<h4>Generally speaking, you shower everyday.</h4> 
-				<select required>
+				<select required id="q3">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -50,7 +50,7 @@
 
 			<h3>Question 4</h3>
 				<h4>Do you think you're attractive?</h4>
-				<select required>
+				<select required id="q4">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -60,7 +60,7 @@
 
 			<h3>Question 5</h3>
 				<h4> Do you agree that both parties should split the bill?</h4>
-				<select required>
+				<select required id="q5">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -70,7 +70,7 @@
 
 			<h3>Question 6</h3>
 				<h4>You are easy to please.</h4>
-				<select required>
+				<select required id="q6">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -80,7 +80,7 @@
 
 			<h3>Question 7</h3>
 				<h4>You love pets!!! Actually, you have one!</h4>
-				<select required>
+				<select required id="q7">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -90,7 +90,7 @@
 
 			<h3>Question 8</h3>
 				<h4>You get teary-eyed watching cartoons! (Toy Story3! is a good example)</h4>
-				<select required>
+				<select required id="q8">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -100,7 +100,7 @@
 
 			<h3>Question 9</h3>
 				<h4>You basically don't like pretentions and value "WYSIWYG". </h4>
-				<select required>
+				<select require id="q9">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -110,7 +110,7 @@
 
 			<h3>Question 10</h3>
 				<h4>Empathy is one of your strengths.</h4>
-				<select required>
+				<select required id="q10">
 				  <option value="1">1 (Strongly Disagree)</option>
 				  <option value="2">2</option>
 				  <option value="3">3</option>
@@ -138,10 +138,23 @@
 	<script type="text/javascript">
 		$("#submit").on("click", function(event){
 			event.preventDefault();
+			//console.log($("#q1").val());
 
 			var newFriend = {
 				name:$("#name").val().trim(),
-				photo:$("#photo").val().trim()
+				photo:$("#photo").val().trim(),
+				answers:[
+				$("#q1").val(),
+				$("#q2").val(),
+				$("#q3").val(),
+				$("#q4").val(),
+				$("#q5").val(),
+				$("#q6").val(),
+				$("#q7").val(),
+				$("#q8").val(),
+				$("#q9").val(),
+				$("#q10").val(),
+				]
 				// answers:$("#age").val().trim(),
 			};
 

@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/joycedelatorre/datingify#readme",
   "dependencies": {
+    "body-parser": "*",
     "express": "^4.16.2",
-    "body-parser":"*"
+    "file-system": "^2.2.2"
   }
 }

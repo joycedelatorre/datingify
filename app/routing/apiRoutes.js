@@ -9,11 +9,11 @@ module.exports = function(app){
     console.log(newFriend);
     console.log(newFriend["scores[]"]);
     //push the new Object to a the file friends 
-    // FS module is used to overwrite the old list with a new list and be able to save it.
-    // fs.writeFile('app/data/friends.js', JSON.stringify(friends),(err)=> {
-    //   if(err) throw err;
-    //   console.log('The file has been saved!');
-    // });
+    FS module is used to overwrite the old list with a new list and be able to save it.
+    fs.writeFile('app/data/friends.js', JSON.stringify(friends),(err)=> {
+      if(err) throw err;
+      console.log('The file has been saved!');
+    });
       var leastcompatibilityScore = 40;
       var currentCompatibleFriend = 0;
       var finalScores =[];
@@ -23,7 +23,7 @@ module.exports = function(app){
       var currentFriendScores = newFriend["scores[]"];
       var placeholder = 0;
       for(var j=0; j<friendScores.length; j++){
-        var diff = Math.abs(parseInt(friendScores[i])- parseInt(currentFriendScores[i])); 
+        var diff = Math.abs(parseInt(friendScores[i])-parseInt(currentFriendScores[i])); 
         placeholder = diff + placeholder;
       }
       finalScores.push(placeholder);

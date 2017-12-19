@@ -9,7 +9,7 @@ module.exports = function(app){
     console.log(newFriend);
     console.log(newFriend["scores[]"]);
     //push the new Object to a the file friends 
-    FS module is used to overwrite the old list with a new list and be able to save it.
+    //FS module is used to overwrite the old list with a new list and be able to save it.
     fs.writeFile('app/data/friends.js', JSON.stringify(friends),(err)=> {
       if(err) throw err;
       console.log('The file has been saved!');

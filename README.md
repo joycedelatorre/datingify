@@ -9,5 +9,6 @@
 2. The user will answer a survey that will help the app calculate his best match based on his answers.
 
 
-#### check me out: [Datingify](https://tranquil-tor-41041.herokuapp.com/)
+### check me out: [Datingify](https://tranquil-tor-41041.herokuapp.com/)
 
+![Datingify](app/image/survey.png)
